@@ -321,7 +321,7 @@
     (st.sent||[]).forEach(function(x){ add(x.cas,x.text); });
     var a=fetch('odpovedi.json?'+Date.now()).then(function(r){return r.ok?r.json():[]}).then(function(arr){ (arr||[]).forEach(function(r){ add(r.iso||r.cas,r.zprava); }); }).catch(function(){});
     var c=fetch('https://ntfy.sh/'+TOPIC+'/json?poll=1&since=12h').then(function(r){return r.text()}).then(function(t){
-      t.split('\n').forEach(function(l){ if(!l.trim())return; try{ var m=JSON.parse(l); if(m.event==='message'&&(m.title||'')===TITLE&&(m.click||'').indexOf(location.pathname)>=0) add(new Date(m.time*1000).toISOString(),m.message); }catch(e){} });
+      t.split('\n').forEach(function(l){ if(!l.trim())return; try{ var m=JSON.parse(l); if(m.event==='message'&&(m.title||'')===TITLE&&(m.click||'').indexOf(location.pathname)>=0&&!/TEST Claude/.test(m.message||'')) add(new Date(m.time*1000).toISOString(),m.message); }catch(e){} });
     }).catch(function(){});
     Promise.all([a,c]).then(function(){ var el=document.getElementById('sent'), ks=Object.keys(all).sort(function(x,y){return all[x]<all[y]?1:-1});
       if(!ks.length) return; el.innerHTML='';
