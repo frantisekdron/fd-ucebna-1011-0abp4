@@ -143,7 +143,7 @@
   .bx input:checked+i{background:var(--gold)} .bx input:checked+i::after{content:"✓";color:#14180f;font-weight:700;font-size:14px;font-style:normal}
   .tx{display:flex;flex-direction:column;gap:2px;font-size:14px;color:#d6dbd2} .tx b{font-weight:600;color:var(--ink);font-size:15px}
   .co,.proc{white-space:pre-line} .proc{color:var(--gold-soft)} .meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:3px;font-size:11.5px;color:var(--muted2)}
-  .tag{border:1px solid var(--line);border-radius:20px;padding:1px 8px;color:var(--muted)}
+  .chip{border:1px solid var(--line);border-radius:20px;padding:1px 8px;color:var(--muted)}
   textarea{width:100%;margin-top:8px;background:var(--bg2);border:1px solid var(--line);border-radius:7px;color:var(--ink);font:400 14px Inter,sans-serif;padding:8px 10px;resize:vertical;min-height:38px}
   textarea:focus{outline:none;border-color:var(--gold)}
   .bar{position:sticky;bottom:0;background:linear-gradient(180deg,transparent,var(--bg) 35%);padding:18px 0 16px;margin-top:10px}
@@ -162,28 +162,28 @@
     <label class="row"><span class="bx"><input type="checkbox" aria-label="barveni-vychozi-krok"><i></i></span>
       <span class="tx"><b>Barvení podle reference jako povinný krok po střihu</b><span class="co">Náš skill barveni udělá z 1–3 referenčních snímků jednu LUT, nabarvený náhled a snímek před/po. Návod k barvení k tomu přidává ztlumení síly vzhledu a vyjmutí pleti z korekce.</span>
       <span class="proc">Pro nás: Jeden schválený vzhled na celou zakázku hned po střihu za 0 Kč. Nejdřív ho vyzkoušíme na našem dronu, pak doplníme laditelnou sílu a ochranu pleti makléře.</span>
-      <span class="meta"><span class="tag">1 večer</span><span class="tag">zdarma</span><span class="src">barvení podle reference (video) · návod k barvení (text)</span></span></span></label>
+      <span class="meta"><span class="chip">1 večer</span><span class="chip">zdarma</span><span class="src">barvení podle reference (video) · návod k barvení (text)</span></span></span></label>
     <textarea placeholder="Komentář k této položce (nepovinné)…" rows="1"></textarea>
   </div>
   <div class="it" data-k="cut-notes-pripominky">
     <label class="row"><span class="bx"><input type="checkbox" aria-label="cut-notes-pripominky"><i></i></span>
       <span class="tx"><b>Cut Notes – připomínky k sestřihu přímo na snímek</b><span class="co">Přehrávač, který Claude Code zveřejní jako odkaz: pustíš video, začneš psát, video se zastaví a poznámka se připne na přesný čas. Claude pak poznámky zapracuje, ke každé odpoví a vyrenderuje další kolo do stejného odkazu.</span>
       <span class="proc">Pro nás: Konec ztracených připomínek typu „v 1:04 titulek déle“ v různých oknech. Stejná stránka poslouží i klientům ke schvalování verzí.</span>
-      <span class="meta"><span class="tag">1 večer</span><span class="tag">zdarma</span><span class="src">Cut Notes</span></span></span></label>
+      <span class="meta"><span class="chip">1 večer</span><span class="chip">zdarma</span><span class="src">Cut Notes</span></span></span></label>
     <textarea placeholder="Komentář k této položce (nepovinné)…" rows="1"></textarea>
   </div>
   <div class="it" data-k="ai-scena-jako-projekt">
     <label class="row"><span class="bx"><input type="checkbox" aria-label="ai-scena-jako-projekt"><i></i></span>
       <span class="tx"><b>AI scény jako projekt: blokace shora, náhledy v 480p</b><span class="co">Postup ze Seedance návodu: každá postava a lokace je element s ID a lokace má referenční snímek s objektivem i protipohledem. Pozice lidí se zakreslí do pohledu shora, nanečisto se zkouší levně v 480p a v 1080p se přepočítají jen vítězové.</span>
       <span class="proc">Pro nás: Hned do vrstvy V5: pevný blok objektivu (24 mm celky, 35 mm interiér), pohled shora z Blender nástřelu jako blokace, materiály bytu jako reference proti plastovým povrchům a mluvící postava z jedné skutečné nahrávky věty. Výsledek: méně spálených kreditů a věrohodnější scény.</span>
-      <span class="meta"><span class="tag">pár dní</span><span class="tag">placené – ptát se</span><span class="src">Seedance návod</span></span></span></label>
+      <span class="meta"><span class="chip">pár dní</span><span class="chip">placené – ptát se</span><span class="src">Seedance návod</span></span></span></label>
     <textarea placeholder="Komentář k této položce (nepovinné)…" rows="1"></textarea>
   </div>
   <div class="it" data-k="kontrola-webu-pred-predanim">
     <label class="row"><span class="bx"><input type="checkbox" aria-label="kontrola-webu-pred-predanim"><i></i></span>
       <span class="tx"><b>Kontrola webu agentem před předáním: Playwright + Strix</b><span class="co">Přes Playwright CLI si agent stránku sám otevře, vyfotí ji a opraví chyby. Strix udělá bezpečnostní audit aplikace s nálezy podle závažnosti a opravou přímo v kódu.</span>
       <span class="proc">Pro nás: Povinná brána před předáním každé web-vlny a adminu (Poutník, VIP Living, Franta Makléř), aby chyby nenašel až klient.</span>
-      <span class="meta"><span class="tag">1 večer</span><span class="src">reel o rozšířeních pro vibecoding</span></span></span></label>
+      <span class="meta"><span class="chip">1 večer</span><span class="src">reel o rozšířeních pro vibecoding</span></span></span></label>
     <textarea placeholder="Komentář k této položce (nepovinné)…" rows="1"></textarea>
   </div></section><section><h2>Co si můžeme rychle vzít</h2><p class="sub">Menší věci do střihu a do šablon, většinou bez nákladů.</p>
   <div class="it" data-k="sablona-reel-s-maklerem">
@@ -195,7 +195,7 @@
 - malé titulky po slovech jsou jen pod řečí,
 - na konci je znak makléře přes 3 záběry domu.</span>
       <span class="proc">Pro nás: Hotový střihový vzorec pro E6 + E4 a skill strizba. Den, soumrak a noc s makléřem natočíme za jedno odpoledne.</span>
-      <span class="meta"><span class="tag">1 večer</span><span class="tag">zdarma</span><span class="src">reel penthouse s makléřkou · reel rodinného domu s makléřem</span></span></span></label>
+      <span class="meta"><span class="chip">1 večer</span><span class="chip">zdarma</span><span class="src">reel penthouse s makléřkou · reel rodinného domu s makléřem</span></span></span></label>
     <textarea placeholder="Komentář k této položce (nepovinné)…" rows="1"></textarea>
   </div>
   <div class="it" data-k="film-domu-na-doby">
@@ -208,14 +208,14 @@
 - noční blok uprostřed,
 - logo přes poslední záběry místo závěrečné karty.</span>
       <span class="proc">Pro nás: Šablona pro filmy domů a vil (Valtice, Sázava, Šlapanice). Do natáčecího plánu přidat 2–3 pohybové detaily na místnost, slider od popředí k popředí, večerní výjezd, dva nepřerušené nálety dronu na zrychlení a kolmý záběr se stoupáním, který poslouží zároveň jako podklad pro zákres.</span>
-      <span class="meta"><span class="tag">1 večer</span><span class="tag">zdarma</span><span class="src">film vily · film domu se zahradou · film vily u laguny</span></span></span></label>
+      <span class="meta"><span class="chip">1 večer</span><span class="chip">zdarma</span><span class="src">film vily · film domu se zahradou · film vily u laguny</span></span></span></label>
     <textarea placeholder="Komentář k této položce (nepovinné)…" rows="1"></textarea>
   </div>
   <div class="it" data-k="vyctovy-reel-maklere">
     <label class="row"><span class="bx"><input type="checkbox" aria-label="vyctovy-reel-maklere"><i></i></span>
       <span class="tx"><b>Edukační reel makléře „10 věcí při prohlídce“</b><span class="co">Mluvčí vyjmenovává body a číslovaný seznam nahoře přibývá ve chvíli, kdy bod vysloví. V okně dole přitom běží ukázka a světlo na mluvčím se mění s každým bodem.</span>
       <span class="proc">Pro nás: Nový formát reelu pro makléře s ukázkami z našich zakázek. Přesvícení makléře ze dne do večera na klíčové slovo se hodí do E6.</span>
-      <span class="meta"><span class="tag">1 večer</span><span class="tag">zdarma</span><span class="src">výčtový reel světelných stylů</span></span></span></label>
+      <span class="meta"><span class="chip">1 večer</span><span class="chip">zdarma</span><span class="src">výčtový reel světelných stylů</span></span></span></label>
     <textarea placeholder="Komentář k této položce (nepovinné)…" rows="1"></textarea>
   </div>
   <div class="it" data-k="kapitoly-a-split">
@@ -225,56 +225,56 @@
 - mluvčí ze stativu z 5–6 úhlů se střihem po větách,
 - obraz rozdělený napůl, buď barevně a černobíle, nebo dva statické záběry vedle sebe.</span>
       <span class="proc">Pro nás: Prodejní reel konkrétního bytu a ukázka před/po rekonstrukci bez natáčení navíc. Jde udělat v DaVinci Resolve.</span>
-      <span class="meta"><span class="tag">1 večer</span><span class="tag">zdarma</span><span class="src">reel tvůrce se čtyřmi styly</span></span></span></label>
+      <span class="meta"><span class="chip">1 večer</span><span class="chip">zdarma</span><span class="src">reel tvůrce se čtyřmi styly</span></span></span></label>
     <textarea placeholder="Komentář k této položce (nepovinné)…" rows="1"></textarea>
   </div>
   <div class="it" data-k="panel-nad-mluvcim">
     <label class="row"><span class="bx"><input type="checkbox" aria-label="panel-nad-mluvcim"><i></i></span>
       <span class="tx"><b>Panel nad mluvčím s psaným pokynem nebo inzerátem</b><span class="co">Nahoře je světlý panel s napodobeným oknem, kde se text píše po znacích, a hlava mluvčího vyčnívá přes něj. Titulky běží v tmavém pruhu dole.</span>
       <span class="proc">Pro nás: Do tvých reelů o službách FD Studia: ukáže kokpit nebo inzerát bez nahrávání obrazovky.</span>
-      <span class="meta"><span class="tag">1 večer</span><span class="tag">zdarma</span><span class="src">reel o pluginu claude-video</span></span></span></label>
+      <span class="meta"><span class="chip">1 večer</span><span class="chip">zdarma</span><span class="src">reel o pluginu claude-video</span></span></span></label>
     <textarea placeholder="Komentář k této položce (nepovinné)…" rows="1"></textarea>
   </div>
   <div class="it" data-k="slovnik-svetla">
     <label class="row"><span class="bx"><input type="checkbox" aria-label="slovnik-svetla"><i></i></span>
       <span class="tx"><b>Slovník světla do pokynů pro vizualizace</b><span class="co">Seznam pojmenovaných světelných stylů, které se vkládají do bloku světla v pokynu pro AI obraz a video.</span>
       <span class="proc">Pro nás: Do skillů vizualizace a konzistentni-framy dát jednotné výrazy (okenní a praktické světlo, zlatá a modrá hodina, den za noc), místo abychom světlo pokaždé popisovali znovu.</span>
-      <span class="meta"><span class="tag">hned</span><span class="tag">zdarma</span><span class="src">výčtový reel světelných stylů</span></span></span></label>
+      <span class="meta"><span class="chip">hned</span><span class="chip">zdarma</span><span class="src">výčtový reel světelných stylů</span></span></span></label>
     <textarea placeholder="Komentář k této položce (nepovinné)…" rows="1"></textarea>
   </div></section><section><h2>Co už děláme (jen potvrdit)</h2><p class="sub">Tohle máme – zaškrtni, jestli to chceš posunout podle videí.</p>
   <div class="it" data-k="blender-nastrel-agentem">
     <label class="row"><span class="bx"><input type="checkbox" aria-label="blender-nastrel-agentem"><i></i></span>
       <span class="tx"><b>Blender nástřel: kameru a světlo postaví agent slovy</b><span class="co">ChatGPT GPT-6 Astra napojený na Blender postaví, otexturuje, nasvítí a rozanimuje scénu jen pokyny v chatu. Rekvizity dodá Tripo z AI obrázku; jak je Astra k programům připojená, ve videu ukázané není.</span>
       <span class="proc">Pro nás: Posune náš skill blender-nastrel: průchod domem a varianty den/soumrak bez ručního klíčování, Tripo na vybavení interiérů a usazení nábytku jako 3D hook. Vždy nejdřív malý test kvůli kreditům.</span>
-      <span class="meta"><span class="tag">pár dní</span><span class="tag">placené – ptát se</span><span class="src">3D pokoj agentem (Blender)</span></span></span></label>
+      <span class="meta"><span class="chip">pár dní</span><span class="chip">placené – ptát se</span><span class="src">3D pokoj agentem (Blender)</span></span></span></label>
     <textarea placeholder="Komentář k této položce (nepovinné)…" rows="1"></textarea>
   </div>
   <div class="it" data-k="ucebna-dlouha-videa">
     <label class="row"><span class="bx"><input type="checkbox" aria-label="ucebna-dlouha-videa"><i></i></span>
       <span class="tx"><b>Učebna: celá dlouhá videa, porovnat s claude-video</b><span class="co">Plugin claude-video (GitHub, licence MIT) stáhne video z YouTube, vytáhne snímky, přepíše řeč a sepíše z toho skill. Zvládne i dávku videí a podcasty.</span>
       <span class="proc">Pro nás: Náš fd-ucebna zpracuj u videí nad 10 min bere jen začátek. Opravit to a porovnat s claude-video, ať projdeme celé tutoriály a podcasty.</span>
-      <span class="meta"><span class="tag">1 večer</span><span class="tag">zdarma</span><span class="src">reel o pluginu claude-video · Seedance návod</span></span></span></label>
+      <span class="meta"><span class="chip">1 večer</span><span class="chip">zdarma</span><span class="src">reel o pluginu claude-video · Seedance návod</span></span></span></label>
     <textarea placeholder="Komentář k této položce (nepovinné)…" rows="1"></textarea>
   </div>
   <div class="it" data-k="ucebna-kontrola-slouceni">
     <label class="row"><span class="bx"><input type="checkbox" aria-label="ucebna-kontrola-slouceni"><i></i></span>
       <span class="tx"><b>Učebna: opravit špatná automatická sloučení technik</b><span class="co">Automatika podle podobnosti spojila i nesouvisející techniky: Skill UI s claude-video, úhly ze stativu s walk-and-talk a kapitolové titulky s titulky jen s hudbou. Ověřit je potřeba i střih scény z více AI generací, světelné varianty a rytmy vzorových filmů.</span>
       <span class="proc">Pro nás: Ať nám knihovna fd-ucebna radí správně. Obnova ze zálohy proběhne jen s tvým souhlasem, tak to tady odškrtni.</span>
-      <span class="meta"><span class="tag">hned</span><span class="tag">zdarma</span><span class="src">reel o rozšířeních pro vibecoding · reel tvůrce se čtyřmi styly · Seedance návod · 3D pokoj agentem (Blender)</span></span></span></label>
+      <span class="meta"><span class="chip">hned</span><span class="chip">zdarma</span><span class="src">reel o rozšířeních pro vibecoding · reel tvůrce se čtyřmi styly · Seedance návod · 3D pokoj agentem (Blender)</span></span></span></label>
     <textarea placeholder="Komentář k této položce (nepovinné)…" rows="1"></textarea>
   </div>
   <div class="it" data-k="weby-styl-klienta">
     <label class="row"><span class="bx"><input type="checkbox" aria-label="weby-styl-klienta"><i></i></span>
       <span class="tx"><b>Weby ve stylu, který se klientovi líbí: Skill UI + Context7</b><span class="co">Skill UI převede vzorový web na DESIGN.md a skill, podle kterého agent staví ve stejném stylu. Context7 mu dodá aktuální dokumentaci knihoven a Supabase plugin založí databázi podle slovního zadání.</span>
       <span class="proc">Pro nás: Posune frontend-design a web-vlna u webů a kokpitů: klient ukáže web, který se mu líbí, a jeho styl trefíme napoprvé.</span>
-      <span class="meta"><span class="tag">1 večer</span><span class="src">reel o rozšířeních pro vibecoding</span></span></span></label>
+      <span class="meta"><span class="chip">1 večer</span><span class="src">reel o rozšířeních pro vibecoding</span></span></span></label>
     <textarea placeholder="Komentář k této položce (nepovinné)…" rows="1"></textarea>
   </div>
   <div class="it" data-k="hook-dum-vyroste">
     <label class="row"><span class="bx"><input type="checkbox" aria-label="hook-dum-vyroste"><i></i></span>
       <span class="tx"><b>AI hook: dům vyroste z pozemku přes tři úhly</b><span class="co">Bílá patra padají z nebe a skládají se ve stavbu. Jedna akce je rozdělená do tří zhruba čtyřvteřinových záběrů se střihem uprostřed dopadu.</span>
       <span class="proc">Pro nás: Nový hook do reality-reel a ai-recepty pro developerské reely: z dnešního pozemku nebo prodejního centra vyroste vizualizovaný dům. Nástroj ve videu vidět není, takže postup je odhad.</span>
-      <span class="meta"><span class="tag">1 večer</span><span class="tag">placené – ptát se</span><span class="src">AI ukázka padajících pater</span></span></span></label>
+      <span class="meta"><span class="chip">1 večer</span><span class="chip">placené – ptát se</span><span class="src">AI ukázka padajících pater</span></span></span></label>
     <textarea placeholder="Komentář k této položce (nepovinné)…" rows="1"></textarea>
   </div></section>
 <section><h2>Odesláno</h2><div id="sent"><p class="lead">Zatím nic neodesláno.</p></div></section>
